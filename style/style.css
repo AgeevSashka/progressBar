@@ -1,0 +1,36 @@
+.bar {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: #ddd;
+}
+.move {
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    background-color: #CD6812;
+    transition: all 0.5s;
+}
+.label {
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.btns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+}
+.btn {
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: #2290B2;
+    color: antiquewhite;
+    transition: all 1s;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #03AEE3;
+}
