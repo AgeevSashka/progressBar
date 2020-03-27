@@ -6,31 +6,21 @@ let width = 5,
 let firstBtn = document.querySelector('.firstBtn'),
     secBtn = document.querySelector('.secBtn'),
     thridBtn = document.querySelector('.thridBtn');
-
+function move(arg) {
+    if(width < 100) {
+        width += arg;
+        elem.style.width = `${width}%`;
+        label.innerHTML = `${width}%`;
+    } else {
+        width = start;
+    }
+}
     firstBtn.addEventListener('click', function() {
-        if(width < 100) {
-            width += 1;
-            elem.style.width = `${width}%`;
-            label.innerHTML = `${width}%`;
-        } else {
-            width = start;
-        }
+        move(1);
     });
     secBtn.addEventListener('click', function() {
-        if(width < 100) {
-            width += 3;
-            elem.style.width = `${width}%`;
-            label.innerHTML = `${width}%`;
-        } else {
-            width = start;
-        }
+        move(3);
     });
     thridBtn.addEventListener('click', function() {
-        if(width < 100) {
-            width += 7;
-            elem.style.width = `${width}%`;
-            label.innerHTML = `${width}%`;
-        } else {
-            width = start;
-        }
+        move(7);
     });
